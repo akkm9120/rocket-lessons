@@ -7,6 +7,8 @@ const Container = (props) => {
   return <div className='parent'>{props.children}</div>;
 };
 
+const papaya = 100;
+
 const Heading = ({ text, ...props }) => <h1 {...props}>{text}</h1>;
 
 function App() {
