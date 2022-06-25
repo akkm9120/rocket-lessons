@@ -9,6 +9,7 @@ const Container = (props) => {
 
 const papaya = 100;
 const mango = 50;
+const commitTest = 5;
 
 const Heading = ({ text, ...props }) => <h1 {...props}>{text}</h1>;
 
