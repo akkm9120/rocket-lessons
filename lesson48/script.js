@@ -16,13 +16,11 @@ const main = async () => {
 
 const fetchCharizard = async () => {
   // fetch charizard
-  const charizard = await fetch('https://pokeapi.co/api/v2/pokemon/charizard')
-    .then((response) => response.json())
-    .then((data) => {
-      return data;
-    });
+   const charizard = await axios.get(
+      "https://pokeapi.co/api/v2/pokemon/charizard"
+    );
   // return the charizard
-  return charizard;
+  return charizard.data;
 };
 
 const button = document.querySelector('button');
